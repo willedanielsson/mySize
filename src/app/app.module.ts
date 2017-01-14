@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
+import { LoginComponent } from './login';
 import { AngularFireModule, AuthMethods, AuthProviders  } from 'angularfire2';
 
 import { FormsModule } from '@angular/forms';
@@ -12,12 +12,12 @@ export const firebaseConfig = {
   authDomain: 'mysize-aebce.firebaseapp.com',
   databaseURL: 'https://mysize-aebce.firebaseio.com',
   storageBucket: 'mysize-aebce.appspot.com',
-  messagingSenderId: "139935871422"
+  messagingSenderId: '139935871422'
 };
 
 @NgModule({
   declarations: [
-    AppComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +29,6 @@ export const firebaseConfig = {
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [LoginComponent]
 })
 export class AppModule { }
